@@ -8,7 +8,7 @@ class Artist
   end 
   
   def songs 
-    
+    Song.all.select
   end 
   
   def self.all 
