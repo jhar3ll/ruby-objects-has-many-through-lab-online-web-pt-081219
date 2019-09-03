@@ -15,11 +15,11 @@ class Doctor
     Appointment.all.select {|appointment| appointment.doctor = self}
   end 
   
-  def patients
+   def patients
     appointments.map do |appointment|
-      appointment.patient
+      appointment.patient 
     end 
-  end
+  end 
   
   def self.all 
     @@all 
